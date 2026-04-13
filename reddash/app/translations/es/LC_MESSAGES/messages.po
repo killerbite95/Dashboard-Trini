@@ -939,7 +939,15 @@ msgstr ""
 "Bot está bajo licencia <a href=\"https://github.com/Cog-Creators/Red-"
 "DiscordBot/blob/V3/develop/LICENSE\">GNU General Public License v3.0</a>."
 
-#: reddash/app/templates/pages/credits.html:28
+#: reddash/app/templates/pages/credits.html:26
+msgid ""
+"Customized and adapted for La Trini BOT by <a href=\"https://github.com"
+"/killerbite95\">Killerbite95</a>."
+msgstr ""
+"Personalizado y adaptado para La Trini BOT por <a href=\"https://github.com"
+"/killerbite95\">Killerbite95</a>."
+
+#: reddash/app/templates/pages/credits.html:29
 msgid "Policies and Disclaimers"
 msgstr "Políticas y Avisos Legales"
 
