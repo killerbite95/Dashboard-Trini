@@ -153,8 +153,10 @@ function backgroundTheme(a) {
   let theme = a.checked ? "dark" : "white";
   document.querySelector("#background_theme").href = "/static/assets/css/themes/background_theme_" + theme + ".css";
   if (theme === "dark") {
+    document.body.classList.add("dark-version");
     document.querySelector("#sidenav-theme-select").children[1].click();
   } else {
+    document.body.classList.remove("dark-version");
     document.querySelector("#sidenav-theme-select").children[0].click();
   }
 }
