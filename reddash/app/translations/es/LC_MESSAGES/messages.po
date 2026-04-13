@@ -1,0 +1,1196 @@
+# Traducciones al español para La Trini BOT Dashboard.
+# Copyright (C) 2026
+# This file is distributed under the same license as the project.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: La Trini Dashboard 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-13 23:20+0200\n"
+"PO-Revision-Date: 2026-04-13 23:30+0200\n"
+"Last-Translator: Killerbite95\n"
+"Language: es\n"
+"Language-Team: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#: reddash/app/utils.py:166
+msgid "Please log in to access this page."
+msgstr "Por favor, inicia sesión para acceder a esta página."
+
+#: reddash/app/utils.py:171
+msgid "To protect your account, please reauthenticate to access this page."
+msgstr "Para proteger tu cuenta, por favor vuelve a autenticarte para acceder a esta página."
+
+#: reddash/app/utils.py:351
+msgid "The Dashboard is currently locked."
+msgstr "El panel de control está bloqueado actualmente."
+
+#: reddash/app/templates/pages/index.html:4 reddash/app/utils.py:400
+msgid "Home"
+msgstr "Inicio"
+
+#: reddash/app/templates/pages/commands.html:4
+msgid "Commands"
+msgstr "Comandos"
+
+#: reddash/app/templates/includes/sidenav.html:7 reddash/app/utils.py:404
+msgid "Dashboard"
+msgstr "Panel"
+
+#: reddash/app/utils.py:406
+msgid "Third Parties"
+msgstr "Terceros"
+
+#: reddash/app/templates/pages/credits.html:4
+msgid "Credits"
+msgstr "Créditos"
+
+#: reddash/app/templates/includes/navigation.html:30
+msgid "Login"
+msgstr "Iniciar Sesión"
+
+#: reddash/app/templates/includes/navigation.html:24 reddash/app/utils.py:412
+msgid "Logout"
+msgstr "Cerrar Sesión"
+
+#: reddash/app/templates/pages/admin.html:4 reddash/app/utils.py:414
+msgid "Admin"
+msgstr "Administración"
+
+#: reddash/app/templates/pages/cog_management.html:4 reddash/app/utils.py:416
+msgid "Cog Management"
+msgstr "Gestión de Cogs"
+
+#: reddash/app/utils.py:661
+msgid "Not connected to bot."
+msgstr "No conectado al bot."
+
+#: reddash/app/utils.py:683
+msgid "Something went wrong."
+msgstr "Algo salió mal."
+
+#: reddash/app/utils.py:737
+msgid "year"
+msgstr "año"
+
+#: reddash/app/utils.py:737
+msgid "years"
+msgstr "años"
+
+#: reddash/app/utils.py:738
+msgid "month"
+msgstr "mes"
+
+#: reddash/app/utils.py:738
+msgid "months"
+msgstr "meses"
+
+#: reddash/app/utils.py:739
+msgid "day"
+msgstr "día"
+
+#: reddash/app/utils.py:739
+msgid "days"
+msgstr "días"
+
+#: reddash/app/utils.py:740
+msgid "hour"
+msgstr "hora"
+
+#: reddash/app/utils.py:740
+msgid "hours"
+msgstr "horas"
+
+#: reddash/app/utils.py:741
+msgid "minute"
+msgstr "minuto"
+
+#: reddash/app/utils.py:741
+msgid "minutes"
+msgstr "minutos"
+
+#: reddash/app/utils.py:742
+msgid "second"
+msgstr "segundo"
+
+#: reddash/app/utils.py:742
+msgid "seconds"
+msgstr "segundos"
+
+#: reddash/app/base/routes.py:219
+msgid "Leave Guild"
+msgstr "Abandonar Servidor"
+
+#: reddash/app/base/routes.py:231
+msgid "Guild not found or missing access to it."
+msgstr "Servidor no encontrado o sin acceso."
+
+#: reddash/app/base/routes.py:251
+msgid "Successfully left the guild."
+msgstr "Has abandonado el servidor correctamente."
+
+#: reddash/app/base/routes.py:254
+msgid "Failed to leave the guild."
+msgstr "Error al abandonar el servidor."
+
+#: reddash/app/base/routes.py:277
+#, python-format
+msgid "Prefixes must be between %(min)s and %(max)s characters long."
+msgstr "Los prefijos deben tener entre %(min)s y %(max)s caracteres."
+
+#: reddash/app/base/routes.py:285
+msgid ""
+"Prefixes cannot start with `/`, as it conflicts with Discord's slash "
+"commands."
+msgstr ""
+"Los prefijos no pueden empezar con `/`, ya que entra en conflicto con los "
+"comandos slash de Discord."
+
+#: reddash/app/base/routes.py:304
+msgid "Invalid language code. Use format: `en-US`."
+msgstr "Código de idioma no válido. Usa el formato: `en-US`."
+
+#: reddash/app/base/routes.py:308
+msgid "Invalid format - language code has to include country code, e.g. `en-US`."
+msgstr "Formato no válido - el código de idioma debe incluir el código de país, ej: `en-US`."
+
+#: reddash/app/base/routes.py:359
+msgid "Bot Nickname:"
+msgstr "Apodo del Bot:"
+
+#: reddash/app/base/routes.py:362
+msgid "Prefixes:"
+msgstr "Prefijos:"
+
+#: reddash/app/base/routes.py:365
+msgid "Admin Roles:"
+msgstr "Roles de Admin:"
+
+#: reddash/app/base/routes.py:368
+msgid "Mod Roles:"
+msgstr "Roles de Mod:"
+
+#: reddash/app/base/routes.py:370
+msgid "Ignore commands in this guild."
+msgstr "Ignorar comandos en este servidor."
+
+#: reddash/app/base/routes.py:372
+msgid "Disabled Commands:"
+msgstr "Comandos Deshabilitados:"
+
+#: reddash/app/base/routes.py:374
+msgid "Use embeds in responses."
+msgstr "Usar embeds en las respuestas."
+
+#: reddash/app/base/routes.py:375
+msgid "Use bot set color in embeds."
+msgstr "Usar el color configurado del bot en los embeds."
+
+#: reddash/app/base/routes.py:376
+msgid "Use fuzzy command search."
+msgstr "Usar búsqueda difusa de comandos."
+
+#: reddash/app/base/routes.py:378
+msgid "Delay before deleting invocation messages (-1 to disable):"
+msgstr "Tiempo antes de borrar los mensajes de invocación (-1 para desactivar):"
+
+#: reddash/app/base/routes.py:385
+msgid "Locale:"
+msgstr "Idioma:"
+
+#: reddash/app/base/routes.py:388
+msgid "Regional Format:"
+msgstr "Formato Regional:"
+
+#: reddash/app/base/routes.py:390
+msgid "Save Modifications"
+msgstr "Guardar Cambios"
+
+#: reddash/app/base/routes.py:415
+msgid "Name"
+msgstr "Nombre"
+
+#: reddash/app/base/routes.py:416
+msgid "Command"
+msgstr "Comando"
+
+#: reddash/app/base/routes.py:432
+msgid "Response"
+msgstr "Respuesta"
+
+#: reddash/app/base/routes.py:445
+msgid "Responses"
+msgstr "Respuestas"
+
+#: reddash/app/base/routes.py:472
+msgid "Guild ID must be an integer."
+msgstr "El ID del servidor debe ser un número entero."
+
+#: reddash/app/base/routes.py:502
+msgid "Successfully saved the modifications."
+msgstr "Cambios guardados correctamente."
+
+#: reddash/app/base/routes.py:506
+msgid "Failed to save the modifications."
+msgstr "Error al guardar los cambios."
+
+#: reddash/app/base/routes.py:585
+msgid ""
+"Failed to change the bot's nickname. Make sure the bot has the required "
+"permissions."
+msgstr ""
+"Error al cambiar el apodo del bot. Asegúrate de que el bot tiene los "
+"permisos necesarios."
+
+#: reddash/app/base/routes.py:673
+msgid "Lock Dashboard"
+msgstr "Bloquear Panel"
+
+#: reddash/app/base/routes.py:674
+msgid "Refresh Sessions"
+msgstr "Refrescar Sesiones"
+
+#: reddash/app/base/routes.py:686
+msgid "Username:"
+msgstr "Nombre de usuario:"
+
+#: reddash/app/base/routes.py:689
+msgid "Description:"
+msgstr "Descripción:"
+
+#: reddash/app/base/routes.py:710
+msgid "Title:"
+msgstr "Título:"
+
+#: reddash/app/base/routes.py:711
+msgid "Icon:"
+msgstr "Icono:"
+
+#: reddash/app/base/routes.py:712
+msgid "Website (Short) Description:"
+msgstr "Descripción Corta de la Web:"
+
+#: reddash/app/base/routes.py:714
+msgid "Support Server URL:"
+msgstr "URL del Servidor de Soporte:"
+
+#: reddash/app/base/routes.py:716
+msgid "Default Color:"
+msgstr "Color por Defecto:"
+
+#: reddash/app/base/routes.py:721
+msgid "Default Background Theme:"
+msgstr "Tema de Fondo por Defecto:"
+
+#: reddash/app/base/routes.py:726
+msgid "Default Sidenav Theme:"
+msgstr "Tema de la Barra Lateral por Defecto:"
+
+#: reddash/app/base/routes.py:731
+msgid "Disabled Third Parties:"
+msgstr "Terceros Deshabilitados:"
+
+#: reddash/app/base/routes.py:780
+msgid "Invoke Error Message:"
+msgstr "Mensaje de Error de Invocación:"
+
+#: reddash/app/base/routes.py:785
+msgid "Disabled Command Message"
+msgstr "Mensaje de Comando Deshabilitado"
+
+#: reddash/app/base/routes.py:790
+msgid "Custom Info:"
+msgstr "Información Personalizada:"
+
+#: reddash/app/base/routes.py:792
+msgid "Use Embeds in commands responses."
+msgstr "Usar Embeds en las respuestas de comandos."
+
+#: reddash/app/base/routes.py:793
+msgid "Embeds Color:"
+msgstr "Color de los Embeds:"
+
+#: reddash/app/base/routes.py:794
+msgid "Use Fuzzy Search when command invokation."
+msgstr "Usar búsqueda difusa al invocar comandos."
+
+#: reddash/app/base/routes.py:795
+msgid "Use Buttons instead of Reactions."
+msgstr "Usar Botones en lugar de Reacciones."
+
+#: reddash/app/base/routes.py:796
+msgid "Make the invite public."
+msgstr "Hacer la invitación pública."
+
+#: reddash/app/base/routes.py:797
+msgid "Use the Commands Scope in the invite."
+msgstr "Usar el Scope de Comandos en la invitación."
+
+#: reddash/app/base/routes.py:799
+msgid "Invite Permissions (0 for nothing):"
+msgstr "Permisos de Invitación (0 para ninguno):"
+
+#: reddash/app/base/routes.py:815
+msgid "Title"
+msgstr "Título"
+
+#: reddash/app/base/routes.py:816
+msgid "Content"
+msgstr "Contenido"
+
+#: reddash/app/base/routes.py:838
+msgid "You're not a bot owner!"
+msgstr "¡No eres el dueño del bot!"
+
+#: reddash/app/base/routes.py:878
+msgid "Unlock Dashboard"
+msgstr "Desbloquear Panel"
+
+#: reddash/app/base/routes.py:883
+msgid "Dashboard locked."
+msgstr "Panel bloqueado."
+
+#: reddash/app/base/routes.py:885
+msgid "Dashboard unlocked."
+msgstr "Panel desbloqueado."
+
+#: reddash/app/base/routes.py:892
+msgid "Users sessions refreshed."
+msgstr "Sesiones de usuarios actualizadas."
+
+#: reddash/app/base/routes.py:1040
+msgid "Loaded"
+msgstr "Cargado"
+
+#: reddash/app/base/routes.py:1061
+msgid "Update Repositories"
+msgstr "Actualizar Repositorios"
+
+#: reddash/app/base/routes.py:1062
+msgid "Update Cogs"
+msgstr "Actualizar Cogs"
+
+#: reddash/app/base/routes.py:1070
+msgid "Repository Name"
+msgstr "Nombre del Repositorio"
+
+#: reddash/app/base/routes.py:1076
+msgid ""
+"Repo names can only contain characters A-z, numbers, underscores, "
+"hyphens, and dots."
+msgstr ""
+"Los nombres de repositorio solo pueden contener caracteres A-z, números, "
+"guiones bajos, guiones y puntos."
+
+#: reddash/app/base/routes.py:1081
+msgid "Repo names cannot start or end with a dot."
+msgstr "Los nombres de repositorio no pueden empezar ni terminar con un punto."
+
+#: reddash/app/base/routes.py:1086
+msgid "Repository URL"
+msgstr "URL del Repositorio"
+
+#: reddash/app/base/routes.py:1093
+msgid "Branch"
+msgstr "Rama"
+
+#: reddash/app/base/routes.py:1099
+msgid "Add Repository"
+msgstr "Añadir Repositorio"
+
+#: reddash/app/base/routes.py:1106
+msgid "Update Repository"
+msgstr "Actualizar Repositorio"
+
+#: reddash/app/base/routes.py:1107
+msgid "Update Cogs from Repository"
+msgstr "Actualizar Cogs del Repositorio"
+
+#: reddash/app/base/routes.py:1108
+msgid "Remove Repository"
+msgstr "Eliminar Repositorio"
+
+#: reddash/app/base/routes.py:1115
+msgid "Install"
+msgstr "Instalar"
+
+#: reddash/app/base/routes.py:1116
+msgid "Update"
+msgstr "Actualizar"
+
+#: reddash/app/base/routes.py:1117
+msgid "Pin/Unpin"
+msgstr "Fijar/Desfijar"
+
+#: reddash/app/base/routes.py:1118
+msgid "Uninstall"
+msgstr "Desinstalar"
+
+#: reddash/app/base/routes.py:1125
+msgid "Sync Application Commands"
+msgstr "Sincronizar Comandos de Aplicación"
+
+#: reddash/app/base/routes.py:1129
+msgid "Module"
+msgstr "Módulo"
+
+#: reddash/app/base/routes.py:1130
+msgid "Type"
+msgstr "Tipo"
+
+#: reddash/app/base/routes.py:1132
+msgid "Enabled"
+msgstr "Habilitado"
+
+#: reddash/app/base/routes.py:1171
+msgid "Downloader is not loaded."
+msgstr "El Downloader no está cargado."
+
+#: reddash/app/base/routes.py:1486
+msgid "Page not found."
+msgstr "Página no encontrada."
+
+#: reddash/app/login/routes.py:40
+msgid ""
+"Authorization is unavailable for Red-Web-Dashboard until setting a secret"
+" Discord oauth key. If you believe this message is delivered in error, "
+"please contact the developer for assistance."
+msgstr ""
+"La autorización no está disponible hasta que se configure una clave secreta "
+"de Discord OAuth. Si crees que este mensaje es un error, contacta al "
+"desarrollador."
+
+#: reddash/app/login/routes.py:80
+msgid ""
+"Authorization failed due to cancellation. Click again below if you wish "
+"to re-attempt authorizing."
+msgstr ""
+"La autorización falló porque fue cancelada. Haz clic abajo si deseas "
+"intentarlo de nuevo."
+
+#: reddash/app/login/routes.py:88
+msgid ""
+"Authorization must be directed through this login page to ensure "
+"protection against CSRF. Please re-authenticate."
+msgstr ""
+"La autorización debe realizarse a través de esta página de inicio de sesión "
+"para garantizar la protección contra CSRF. Por favor, vuelve a autenticarte."
+
+#: reddash/app/login/routes.py:96
+msgid ""
+"Your authentication request contained a different state than when your "
+"authorization process was initiated. Please re-attempt."
+msgstr ""
+"Tu solicitud de autenticación contenía un estado diferente al del inicio "
+"del proceso de autorización. Por favor, inténtalo de nuevo."
+
+#: reddash/app/login/routes.py:128
+msgid ""
+"Authorization failed due to issues on the Discord API. Please re-attempt "
+"to authorize below, or contact the developer for assistance if this issue"
+" persists."
+msgstr ""
+"La autorización falló por problemas con la API de Discord. Intenta "
+"autorizar de nuevo abajo, o contacta al desarrollador si el problema "
+"persiste."
+
+#: reddash/app/login/routes.py:162
+#, python-brace-format
+msgid "Nice to see you again, {display_name}!"
+msgstr "¡Qué bueno verte de nuevo, {display_name}!"
+
+#: reddash/app/login/routes.py:176
+msgid "You have been deconnected with success."
+msgstr "Has cerrado sesión correctamente."
+
+#: reddash/app/templates/errors/403.html:4
+msgid "Erreur 403"
+msgstr "Error 403"
+
+#: reddash/app/templates/errors/403.html:19
+msgid "Error 403!"
+msgstr "¡Error 403!"
+
+#: reddash/app/templates/errors/403.html:21
+msgid "Looks like you're not allowed to access to this page... Strange..."
+msgstr "Parece que no tienes permiso para acceder a esta página..."
+
+#: reddash/app/templates/errors/403.html:27
+msgid "Back to Home"
+msgstr "Volver al Inicio"
+
+#: reddash/app/templates/errors/404.html:4
+msgid "Erreur 404"
+msgstr "Error 404"
+
+#: reddash/app/templates/errors/404.html:19
+msgid "Error 404!"
+msgstr "¡Error 404!"
+
+#: reddash/app/templates/errors/404.html:21
+msgid "Looks like that page doesn't exist... Strange..."
+msgstr "Parece que esa página no existe..."
+
+#: reddash/app/templates/errors/500.html:4
+msgid "Erreur 500"
+msgstr "Error 500"
+
+#: reddash/app/templates/errors/500.html:19
+msgid "Error 500!"
+msgstr "¡Error 500!"
+
+#: reddash/app/templates/errors/500.html:21
+msgid "Looks like the server ran into an issue... Strange..."
+msgstr "Parece que el servidor tuvo un problema..."
+
+#: reddash/app/templates/errors/blacklisted.html:4
+msgid "Blacklisted"
+msgstr "Bloqueado"
+
+#: reddash/app/templates/errors/blacklisted.html:19
+msgid "You've been blacklisted!"
+msgstr "¡Has sido bloqueado!"
+
+#: reddash/app/templates/errors/blacklisted.html:20
+msgid "We've noticed some suspicious activity from you. Please contact bot owner."
+msgstr "Hemos detectado actividad sospechosa en tu cuenta. Contacta al dueño del bot."
+
+#: reddash/app/templates/includes/fixed-plugin.html:6
+msgid "Dashboard Configurator"
+msgstr "Configuración del Panel"
+
+#: reddash/app/templates/includes/fixed-plugin.html:7
+msgid "Choose your custom options!"
+msgstr "¡Elige tus opciones personalizadas!"
+
+#: reddash/app/templates/includes/fixed-plugin.html:18
+msgid "Theme Color"
+msgstr "Color del Tema"
+
+#: reddash/app/templates/includes/fixed-plugin.html:30
+msgid "White / Dark"
+msgstr "Claro / Oscuro"
+
+#: reddash/app/templates/includes/fixed-plugin.html:38
+msgid "Sidenav Theme"
+msgstr "Tema de la Barra Lateral"
+
+#: reddash/app/templates/includes/fixed-plugin.html:41
+msgid "White"
+msgstr "Claro"
+
+#: reddash/app/templates/includes/fixed-plugin.html:42
+msgid "Dark"
+msgstr "Oscuro"
+
+#: reddash/app/templates/includes/fixed-plugin.html:44
+msgid "You can change the Sidenav theme just on desktop view."
+msgstr "Solo puedes cambiar el tema de la barra lateral en la vista de escritorio."
+
+#: reddash/app/templates/includes/fixed-plugin.html:47
+msgid "Navbar Fixed"
+msgstr "Barra de Navegación Fija"
+
+#: reddash/app/templates/includes/footer.html:7
+msgid "Flask Dashboard Argon"
+msgstr "Panel de La Trini"
+
+#: reddash/app/templates/includes/footer.html:10
+msgid "Adapted for Red-DiscordBot"
+msgstr "Adaptado para La Trini BOT"
+
+#: reddash/app/templates/includes/footer.html:16
+msgid "Creative Tim"
+msgstr "Creative Tim"
+
+#: reddash/app/templates/includes/footer.html:17
+msgid "Template created by AppSeed."
+msgstr "Plantilla creada por AppSeed."
+
+#: reddash/app/templates/includes/navigation.html:7
+msgid "Type here..."
+msgstr "Buscar..."
+
+#: reddash/app/templates/includes/scripts.html:125
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: reddash/app/templates/includes/sidenav.html:30
+msgid "Need help?"
+msgstr "¿Necesitas ayuda?"
+
+#: reddash/app/templates/includes/sidenav.html:32
+msgid "Please join our support server!"
+msgstr "¡Únete a nuestro servidor de soporte!"
+
+#: reddash/app/templates/includes/sidenav.html:34
+msgid "Please check our docs!"
+msgstr "¡Revisa nuestra documentación!"
+
+#: reddash/app/templates/includes/sidenav.html:40
+msgid "Join Support Server"
+msgstr "Servidor de Soporte"
+
+#: reddash/app/templates/includes/sidenav.html:42
+msgid "Documentation"
+msgstr "Documentación"
+
+#: reddash/app/templates/pages/admin.html:67
+msgid "Owned by"
+msgstr "Administrado por"
+
+#: reddash/app/templates/pages/admin.html:74
+msgid "Overview"
+msgstr "Resumen"
+
+#: reddash/app/templates/pages/admin.html:79
+msgid "Dashboard Settings"
+msgstr "Ajustes del Panel"
+
+#: reddash/app/templates/pages/admin.html:84
+msgid "Bot Settings"
+msgstr "Ajustes del Bot"
+
+#: reddash/app/templates/pages/admin.html:89
+msgid "Custom Pages"
+msgstr "Páginas Personalizadas"
+
+#: reddash/app/templates/pages/admin.html:110
+msgid "Webserver has been up for:"
+msgstr "El servidor web lleva activo:"
+
+#: reddash/app/templates/pages/admin.html:111
+msgid "Connected to RPC websocket for:"
+msgstr "Conectado al websocket RPC desde hace:"
+
+#: reddash/app/templates/pages/admin.html:111
+msgid "Disconnected of RPC websocket for:"
+msgstr "Desconectado del websocket RPC desde hace:"
+
+#: reddash/app/templates/pages/admin.html:116
+msgid ""
+"This will lock the Dashboard and prevent anyone from accessing control "
+"panels. Bot owners will still have access, and users will still be able "
+"to login through Discord Open Authentication."
+msgstr ""
+"Esto bloqueará el panel e impedirá que nadie acceda a los paneles de control. "
+"Los dueños del bot seguirán teniendo acceso, y los usuarios podrán seguir "
+"iniciando sesión mediante la autenticación abierta de Discord."
+
+#: reddash/app/templates/pages/admin.html:118
+msgid ""
+"This will log out all active users and require them to re-authenticate, "
+"except bot owners."
+msgstr ""
+"Esto cerrará la sesión de todos los usuarios activos y les obligará a "
+"volver a autenticarse, excepto los dueños del bot."
+
+#: reddash/app/templates/pages/admin.html:359
+msgid "Delete Custom Page"
+msgstr "Eliminar Página Personalizada"
+
+#: reddash/app/templates/pages/admin.html:363
+msgid "Create Custom Page"
+msgstr "Crear Página Personalizada"
+
+#: reddash/app/templates/pages/admin.html:381
+msgid "Edit Discord Bot Profile"
+msgstr "Editar Perfil del Bot"
+
+#: reddash/app/templates/pages/admin.html:398
+msgid "Use default"
+msgstr "Usar por defecto"
+
+#: reddash/app/templates/pages/admin.html:399
+msgid "Keep current"
+msgstr "Mantener actual"
+
+#: reddash/app/templates/pages/admin.html:416
+msgid "Close"
+msgstr "Cerrar"
+
+#: reddash/app/templates/pages/admin.html:489
+msgid "Are you sure you want to change the lock status of Dashboard?"
+msgstr "¿Seguro que quieres cambiar el estado de bloqueo del panel?"
+
+#: reddash/app/templates/pages/admin.html:490
+msgid "You will be able to change it again later."
+msgstr "Podrás cambiarlo de nuevo más tarde."
+
+#: reddash/app/templates/pages/admin.html:491
+msgid "Yes, change it!"
+msgstr "¡Sí, cámbialo!"
+
+#: reddash/app/templates/pages/admin.html:507
+msgid "Are you sure you want to refresh users sessions and log out all users?"
+msgstr "¿Seguro que quieres refrescar las sesiones y cerrar la sesión de todos?"
+
+#: reddash/app/templates/pages/admin.html:508
+msgid "They will be able to log again."
+msgstr "Podrán volver a iniciar sesión."
+
+#: reddash/app/templates/pages/admin.html:509
+msgid "Yes, refresh!"
+msgstr "¡Sí, refrescar!"
+
+#: reddash/app/templates/pages/cog_management.html:16
+msgid "Cogs"
+msgstr "Cogs"
+
+#: reddash/app/templates/pages/cog_management.html:21
+msgid "Downloader"
+msgstr "Descargas"
+
+#: reddash/app/templates/pages/cog_management.html:26
+msgid "Slash"
+msgstr "Slash"
+
+#: reddash/app/templates/pages/cog_management.html:40
+msgid "loaded"
+msgstr "cargados"
+
+#: reddash/app/templates/pages/cog_management.html:77
+msgid "Loading..."
+msgstr "Cargando..."
+
+#: reddash/app/templates/pages/cog_management.html:80
+msgid "The Downloader cog is not loaded."
+msgstr "El cog Downloader no está cargado."
+
+#: reddash/app/templates/pages/cog_management.html:92
+msgid "application commands"
+msgstr "comandos de aplicación"
+
+#: reddash/app/templates/pages/cog_management.html:92
+msgid "application command"
+msgstr "comando de aplicación"
+
+#: reddash/app/templates/pages/cog_management.html:130
+msgid "No application commands found."
+msgstr "No se encontraron comandos de aplicación."
+
+#: reddash/app/templates/pages/cog_management.html:225
+msgid "Do you really want to remove the repo"
+msgstr "¿De verdad quieres eliminar el repositorio"
+
+#: reddash/app/templates/pages/cog_management.html:226
+msgid "You could add it again later."
+msgstr "Podrás añadirlo de nuevo más tarde."
+
+#: reddash/app/templates/pages/cog_management.html:227
+msgid "Yes, remove!"
+msgstr "¡Sí, eliminar!"
+
+#: reddash/app/templates/pages/cog_management.html:243
+msgid "Do you want to install the cog"
+msgstr "¿Quieres instalar el cog"
+
+#: reddash/app/templates/pages/cog_management.html:243
+msgid " from the repo"
+msgstr " del repositorio"
+
+#: reddash/app/templates/pages/cog_management.html:244
+msgid "You could uninstall it later."
+msgstr "Podrás desinstalarlo más tarde."
+
+#: reddash/app/templates/pages/cog_management.html:245
+msgid "Yes, install!"
+msgstr "¡Sí, instalar!"
+
+#: reddash/app/templates/pages/cog_management.html:261
+msgid "Do you really want to uninstall the cog"
+msgstr "¿De verdad quieres desinstalar el cog"
+
+#: reddash/app/templates/pages/cog_management.html:262
+msgid "You could reinstall it later."
+msgstr "Podrás reinstalarlo más tarde."
+
+#: reddash/app/templates/pages/cog_management.html:263
+msgid "Yes, uninstall!"
+msgstr "¡Sí, desinstalar!"
+
+#: reddash/app/templates/pages/cog_management_downloader.html:4
+msgid "repositories"
+msgstr "repositorios"
+
+#: reddash/app/templates/pages/cog_management_downloader.html:4
+msgid "repository"
+msgstr "repositorio"
+
+#: reddash/app/templates/pages/cog_management_downloader.html:79
+msgid "Author(s):"
+msgstr "Autor(es):"
+
+#: reddash/app/templates/pages/cog_management_downloader.html:80
+msgid "Repo:"
+msgstr "Repo:"
+
+#: reddash/app/templates/pages/cog_management_downloader.html:86
+msgid "Cog"
+msgstr "Cog"
+
+#: reddash/app/templates/pages/cog_management_downloader.html:87
+msgid "Short Description"
+msgstr "Descripción Corta"
+
+#: reddash/app/templates/pages/cog_management_downloader.html:95
+msgid "HIDDEN"
+msgstr "OCULTO"
+
+#: reddash/app/templates/pages/cog_management_downloader.html:127
+msgid "Tags:"
+msgstr "Etiquetas:"
+
+#: reddash/app/templates/pages/cog_management_downloader.html:130
+msgid "Requirements:"
+msgstr "Requisitos:"
+
+#: reddash/app/templates/pages/cog_management_downloader.html:133
+msgid "End User Data Statement:"
+msgstr "Declaración de Datos del Usuario:"
+
+#: reddash/app/templates/pages/commands.html:18
+msgid "with"
+msgstr "con"
+
+#: reddash/app/templates/pages/commands.html:23
+msgid "Search a command..."
+msgstr "Buscar un comando..."
+
+#: reddash/app/templates/pages/commands.html:63
+msgid "Prefix"
+msgstr "Prefijo"
+
+#: reddash/app/templates/pages/commands.html:79
+msgid "Description"
+msgstr "Descripción"
+
+#: reddash/app/templates/pages/commands.html:96
+msgid "Usage:"
+msgstr "Uso:"
+
+#: reddash/app/templates/pages/commands.html:97
+msgid "Copy to clipboard"
+msgstr "Copiar al portapapeles"
+
+#: reddash/app/templates/pages/commands.html:101
+msgid "Aliases:"
+msgstr "Alias:"
+
+#: reddash/app/templates/pages/commands.html:201
+msgid ""
+"This page is currently unavailable until initial connection is made with "
+"a Red bot."
+msgstr ""
+"Esta página no está disponible hasta que se establezca la conexión inicial "
+"con el bot."
+
+#: reddash/app/templates/pages/credits.html:22
+msgid ""
+"The base template for this Dashboard was created by <a "
+"href=\"https://github.com/timcreative/freebies/blob/master/LICENSE.md\">MIT"
+" License</a>."
+msgstr ""
+"La plantilla base de este panel fue creada bajo <a "
+"href=\"https://github.com/timcreative/freebies/blob/master/LICENSE.md\">Licencia"
+" MIT</a>."
+
+#: reddash/app/templates/pages/credits.html:23
+msgid ""
+"The Dashboard was edited and recoded to work with Red-DiscordBot by <a "
+"href=\"https://github.com/NeuroAssassin\">Neuro Assassin#4779</a> and <a "
+"href=\"https://github.com/AAA3A-AAA3A\">AAA3A</a>, licensed under <a "
+"href=\"https://github.com/AAA3A-AAA3A/Red-Web-"
+"Dashboard/blob/main/LICENSE\">Affero General Public License v3.0</a>."
+msgstr ""
+"El panel fue editado y recodificado para funcionar con Red-DiscordBot por <a "
+"href=\"https://github.com/NeuroAssassin\">Neuro Assassin#4779</a> y <a "
+"href=\"https://github.com/AAA3A-AAA3A\">AAA3A</a>, bajo licencia <a "
+"href=\"https://github.com/AAA3A-AAA3A/Red-Web-"
+"Dashboard/blob/main/LICENSE\">Affero General Public License v3.0</a>."
+
+#: reddash/app/templates/pages/credits.html:24
+msgid ""
+"An important part of internal Python RPC logic was coded by <a "
+"href=\"https://github.com/NeuroAssassin\">Neuro Assassin#4779</a>, "
+"licensed under <a href=\"https://github.com/Cog-Creators/Red-"
+"Dashboard/blob/master/LICENSE\">Affero General Public License v3.0</a>."
+msgstr ""
+"Una parte importante de la lógica interna de Python RPC fue programada por <a "
+"href=\"https://github.com/NeuroAssassin\">Neuro Assassin#4779</a>, bajo "
+"licencia <a href=\"https://github.com/Cog-Creators/Red-"
+"Dashboard/blob/master/LICENSE\">Affero General Public License v3.0</a>."
+
+#: reddash/app/templates/pages/credits.html:25
+msgid ""
+"This Dashboard was made for <a href=\"https://github.com/Cog-Creators"
+"/Red-DiscordBot\">Red Discord Bot</a>, a multifunctional, fully modular "
+"Discord bot, created by Twentysix, made great by many. Red Discord Bot is"
+" licensed under <a href=\"https://github.com/Cog-Creators/Red-"
+"DiscordBot/blob/V3/develop/LICENSE\">GNU General Public License v3.0</a>."
+msgstr ""
+"Este panel fue creado para <a href=\"https://github.com/Cog-Creators"
+"/Red-DiscordBot\">Red Discord Bot</a>, un bot de Discord multifuncional y "
+"completamente modular, creado por Twentysix, mejorado por muchos. Red Discord "
+"Bot está bajo licencia <a href=\"https://github.com/Cog-Creators/Red-"
+"DiscordBot/blob/V3/develop/LICENSE\">GNU General Public License v3.0</a>."
+
+#: reddash/app/templates/pages/credits.html:28
+msgid "Policies and Disclaimers"
+msgstr "Políticas y Avisos Legales"
+
+#: reddash/app/templates/pages/credits.html:31
+msgid "Privacy Policy:"
+msgstr "Política de Privacidad:"
+
+#: reddash/app/templates/pages/credits.html:34
+msgid "Cookie Policy:"
+msgstr "Política de Cookies:"
+
+#: reddash/app/templates/pages/credits.html:37
+msgid "Third Parties Disclaimer:"
+msgstr "Aviso Legal de Terceros:"
+
+#: reddash/app/templates/pages/credits.html:40
+msgid ""
+"The above policies and disclaimers only apply on unmodified distributions"
+" of Red-Web-Dashboard. Copyright holder makes no guarantee that the "
+"documents are accurate on public distributions of Red-Web-Dashboard."
+msgstr ""
+"Las políticas y avisos anteriores solo aplican a distribuciones sin modificar "
+"de Red-Web-Dashboard. El titular de los derechos de autor no garantiza que los "
+"documentos sean precisos en distribuciones públicas."
+
+#: reddash/app/templates/pages/dashboard.html:4
+msgid "Guilds"
+msgstr "Servidores"
+
+#: reddash/app/templates/pages/dashboard.html:18
+msgid "Guild"
+msgstr "Servidor"
+
+#: reddash/app/templates/pages/dashboard.html:23
+msgid "Search a guild..."
+msgstr "Buscar un servidor..."
+
+#: reddash/app/templates/pages/dashboard.html:30
+msgid "Filter by role"
+msgstr "Filtrar por rol"
+
+#: reddash/app/templates/pages/dashboard.html:33
+msgid "All guilds"
+msgstr "Todos los servidores"
+
+#: reddash/app/templates/pages/dashboard.html:34
+msgid "Owner"
+msgstr "Dueño"
+
+#: reddash/app/templates/pages/dashboard.html:35
+msgid "Administrator"
+msgstr "Administrador"
+
+#: reddash/app/templates/pages/dashboard.html:36
+msgid "Moderator"
+msgstr "Moderador"
+
+#: reddash/app/templates/pages/dashboard.html:40
+msgid "Invite Me!"
+msgstr "¡Invítame!"
+
+#: reddash/app/templates/pages/dashboard_guild.html:29
+msgid "Third Party"
+msgstr "Tercero"
+
+#: reddash/app/templates/pages/dashboard_guild.html:52
+msgid "Alias"
+msgstr "Alias"
+
+#: reddash/app/templates/pages/dashboard_guild.html:77
+msgid "Delete Alias"
+msgstr "Eliminar Alias"
+
+#: reddash/app/templates/pages/dashboard_guild.html:81
+msgid "Create Alias"
+msgstr "Crear Alias"
+
+#: reddash/app/templates/pages/dashboard_guild.html:96
+msgid "CustomCommands"
+msgstr "Comandos Personalizados"
+
+#: reddash/app/templates/pages/dashboard_guild.html:121
+msgid "Remove Response"
+msgstr "Eliminar Respuesta"
+
+#: reddash/app/templates/pages/dashboard_guild.html:127
+msgid "Add Response"
+msgstr "Añadir Respuesta"
+
+#: reddash/app/templates/pages/dashboard_guild.html:130
+msgid "Delete Custom Command"
+msgstr "Eliminar Comando Personalizado"
+
+#: reddash/app/templates/pages/dashboard_guild.html:134
+msgid "Create Custom Command"
+msgstr "Crear Comando Personalizado"
+
+#: reddash/app/templates/pages/dashboard_guild.html:155
+msgid "Settings"
+msgstr "Ajustes"
+
+#: reddash/app/templates/pages/guild_profile.html:16
+msgid "Copy ID"
+msgstr "Copiar ID"
+
+#: reddash/app/templates/pages/guild_profile.html:35
+msgid "Members"
+msgstr "Miembros"
+
+#: reddash/app/templates/pages/guild_profile.html:35
+msgid "Member"
+msgstr "Miembro"
+
+#: reddash/app/templates/pages/guild_profile.html:39
+msgid "Channels"
+msgstr "Canales"
+
+#: reddash/app/templates/pages/guild_profile.html:39
+msgid "Channel"
+msgstr "Canal"
+
+#: reddash/app/templates/pages/guild_profile.html:43
+msgid "Roles"
+msgstr "Roles"
+
+#: reddash/app/templates/pages/guild_profile.html:43
+msgid "Role"
+msgstr "Rol"
+
+#: reddash/app/templates/pages/guild_profile.html:51
+msgid "Created at:"
+msgstr "Creado el:"
+
+#: reddash/app/templates/pages/guild_profile.html:53
+msgid "Bot joined at:"
+msgstr "Bot se unió el:"
+
+#: reddash/app/templates/pages/guild_profile.html:66
+msgid "Are you sure you want me to leave this guild?"
+msgstr "¿Seguro que quieres que abandone este servidor?"
+
+#: reddash/app/templates/pages/guild_profile.html:67
+msgid ""
+"You will always be able to invite me back to this server later, but you "
+"risk losing some settings."
+msgstr ""
+"Siempre podrás volver a invitarme a este servidor, pero podrías perder "
+"algunos ajustes."
+
+#: reddash/app/templates/pages/guild_profile.html:68
+msgid "Yes, leave!"
+msgstr "¡Sí, salir!"
+
+#: reddash/app/templates/pages/index.html:37
+msgid "Join support server"
+msgstr "Unirse al servidor de soporte"
+
+#: reddash/app/templates/pages/index.html:51
+msgid "Total Servers"
+msgstr "Servidores Totales"
+
+#: reddash/app/templates/pages/index.html:72
+msgid "Total Users"
+msgstr "Usuarios Totales"
+
+#: reddash/app/templates/pages/index.html:93
+msgid "Been up for"
+msgstr "Tiempo activo"
+
+#: reddash/app/templates/pages/login/login.html:27
+msgid "Authentication"
+msgstr "Autenticación"
+
+#: reddash/app/templates/pages/login/login.html:30
+msgid ""
+"Accessing Red-Web-Dashboard controls requires authorization for security."
+" Authorization for Red-Web-Dashboard uses Discord Open Authentication to "
+"identify and verify users. Please click on the Login button below to "
+"access the Dashboard."
+msgstr ""
+"Para acceder al panel de control de La Trini es necesario autorizarse por seguridad. "
+"Se usa la autenticación abierta de Discord para identificar y verificar usuarios. "
+"Haz clic en el botón de abajo para acceder al panel."
+
+#: reddash/app/templates/pages/login/login.html:32
+msgid "Login with Discord"
+msgstr "Iniciar Sesión con Discord"
+
+#: reddash/app/templates/pages/third_parties/oauth.html:19
+msgid "OAuth"
+msgstr "OAuth"
+
+#: reddash/app/templates/pages/third_parties/oauth.html:20
+msgid ""
+"Successfully forwarded your account informations. You may now close this "
+"tab and go back to Discord."
+msgstr ""
+"La información de tu cuenta se ha enviado correctamente. Ya puedes cerrar "
+"esta pestaña y volver a Discord."
+
+#: reddash/app/templates/pages/third_parties/oauth.html:27
+#, python-brace-format
+msgid ""
+"This is a Third Party integration. By using this application, you "
+"acknowledge that you have read the Third Party disclaimer found <a "
+"href=\"{link}\">here</a>."
+msgstr ""
+"Esta es una integración de terceros. Al usar esta aplicación, reconoces "
+"que has leído el aviso legal de terceros que se encuentra <a "
+"href=\"{link}\">aquí</a>."
+
+#: reddash/app/templates/pages/third_parties/third_parties_list.html:46
+msgid "Page"
+msgstr "Página"
+
+#: reddash/app/templates/pages/third_parties/third_parties_list.html:81
+msgid "There is no third party available currently."
+msgstr "No hay integraciones de terceros disponibles actualmente."
+
+#: reddash/app/third_parties/routes.py:155
+msgid "Looks like that third party doesn't exist... Strange..."
+msgstr "Parece que esa integración de terceros no existe..."
+
+#: reddash/app/third_parties/routes.py:158
+msgid "This third party is disabled."
+msgstr "Esta integración de terceros está deshabilitada."
+
+#: reddash/app/third_parties/routes.py:168
+msgid "Method not allowed."
+msgstr "Método no permitido."
+
+#: reddash/app/third_parties/routes.py:179
+msgid "You must be the owner of the bot to access this page."
+msgstr "Debes ser el dueño del bot para acceder a esta página."
+
+#: reddash/app/third_parties/routes.py:290
+msgid "An error occurred while processing your request."
+msgstr "Ocurrió un error al procesar tu solicitud."
+
+#: reddash/app/pagination.py
+msgid "Go"
+msgstr "Ir"
+
+#: reddash/app/templates/includes/footer.html
+msgid "Support"
+msgstr "Soporte"
+
+#: reddash/app/templates/includes/footer.html
+msgid "Control Panel"
+msgstr "Panel de Control"
+
+#: reddash/app/templates/pages/third_parties/oauth.html
+msgid "Authorization"
+msgstr "Autorización"

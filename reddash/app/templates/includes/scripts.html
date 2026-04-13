@@ -8,9 +8,9 @@
 
 <script>
     {% if csrf_token %}
-        const csrf_token = "{{ csrf_token() }}";
+    const csrf_token = "{{ csrf_token() }}";
     {% else %}
-        const csrf_token = null;
+    const csrf_token = null;
     {% endif %}
     let confirmationDone = false;  // Used to store actions confirmation state.
 </script>
@@ -45,12 +45,12 @@
         "hideMethod": "fadeOut"
     }
     toastr.danger = toastr.error;
-    {% with messages = get_flashed_messages(with_categories=true) %}
-        {% if messages %}
-            {% for category, message in messages %}
-                toastr.{{ category }}("{{ message|replace('\n', ' ')|markdown|replace('<p>', '')|replace('</p>', '') }}");
-            {% endfor %}
-        {% endif %}
+    {% with messages = get_flashed_messages(with_categories = true) %}
+    {% if messages %}
+    {% for category, message in messages %}
+    toastr.{ { category } } ("{{ message|replace('\n', ' ')|markdown|replace('<p>', '')|replace('</p>', '') }}");
+    {% endfor %}
+    {% endif %}
     {% endwith %}
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
@@ -78,9 +78,9 @@
         var easymde = new EasyMDE({
             element: element,
             showIcons: ["strikethrough", "heading-smaller", "heading-bigger", "code", "clean-block", "undo", "redo"],
-            renderingConfig: {"codeSyntaxHighlighting": true},
+            renderingConfig: { "codeSyntaxHighlighting": true },
             forceSync: true,
-            autoRefresh: {delay: 300},
+            autoRefresh: { delay: 300 },
             spellChecker: false,
             sideBySideFullscreen: false,
             autosave: {
@@ -147,27 +147,27 @@
             const dataTransfer = new DataTransfer();
             dropzone.files.forEach(file => dataTransfer.items.add(file));
             input_element.files = dataTransfer.files;
-            document.dispatchEvent(new Event("change", {bubbles: true}));
+            document.dispatchEvent(new Event("change", { bubbles: true }));
             dropzone._finished(files, null, null);
         }
         dropzone.uploadFiles = uploadFiles
-        dropzone.on("removedfile", function(file) {
+        dropzone.on("removedfile", function (file) {
             uploadFiles([]);
         });
-        dropzone.on("maxfilesexceeded", function(file) {
+        dropzone.on("maxfilesexceeded", function (file) {
             if (dropzone.options.maxFiles == 1) {
                 dropzone.removeFile(file);
                 dropzone.removeFile(dropzone.files[0]);
                 dropzone.addFile(file);
             }
         });
-        input_element.style.display = "none";        
+        input_element.style.display = "none";
     });
 </script>
 <script src="https://npmcdn.com/flatpickr/dist/flatpickr.min.js"></script>
-<script src="https://npmcdn.com/flatpickr/dist/l10n/fr.js"></script>
+<script src="https://npmcdn.com/flatpickr/dist/l10n/es.js"></script>
 <script>
-    flatpickr.localize(flatpickr.l10ns.fr);
+    flatpickr.localize(flatpickr.l10ns.es);
     document.querySelectorAll(".datepicker").forEach(element => {
         flatpickr(
             element,
@@ -180,7 +180,7 @@
         );
         var parentElement = element.parentElement;
         if (parentElement.classList.contains("input-group")) {
-            parentElement.querySelector(".input-group-text").addEventListener("click", function() {
+            parentElement.querySelector(".input-group-text").addEventListener("click", function () {
                 element._flatpickr.toggle();
             });
             parentElement.removeChild(element);
@@ -190,7 +190,7 @@
 </script>
 <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
 <script>
-    document.querySelectorAll("select, input[type=text].select-choices").forEach(function(element) {
+    document.querySelectorAll("select, input[type=text].select-choices").forEach(function (element) {
         let choicesOptions = {
             silent: false,
             maxItemCount: -1,
@@ -218,7 +218,7 @@
             choicesOptions.removeItems = false;
             choicesOptions.removeItemButton = false;
             choicesOptions.searchEnabled = false;
-            choicesOptions.classNames = {disabledState: "is-active", itemSelectable: "choices__item"};
+            choicesOptions.classNames = { disabledState: "is-active", itemSelectable: "choices__item" };
         }
         if (element.parentElement.style.maxWidth) {
             choicesOptions.itemSelectText = "";
@@ -263,7 +263,7 @@
             } else {
                 _input = input;
             }
-            if (!input.checkValidity() || (input.minLength != - 1&& input.value.length < input.minLength) || (input.maxLength != -1 && input.value.length > input.maxLength)) {  // Check manually for minlength and maxlength because of EasyMDE.
+            if (!input.checkValidity() || (input.minLength != - 1 && input.value.length < input.minLength) || (input.maxLength != -1 && input.value.length > input.maxLength)) {  // Check manually for minlength and maxlength because of EasyMDE.
                 _input.classList.remove("is-valid");
                 _input.classList.add("is-invalid");
                 input.dataset.invalid = true;

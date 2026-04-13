@@ -1,0 +1,298 @@
+/* ============================================
+   La Trini BOT — Custom Dashboard Styles
+   ============================================ */
+
+/* --- Typography --- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+body {
+    font-family: 'Inter', 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.font-weight-bold,
+.font-weight-bolder {
+    font-family: 'Inter', 'Open Sans', sans-serif;
+}
+
+/* --- Global Card Enhancements --- */
+.card {
+    border-radius: 1rem;
+    border: none;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.10);
+}
+
+/* --- Smooth Scrollbar --- */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.25);
+}
+
+/* --- Hero Section --- */
+.trini-hero {
+    border-radius: 1rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.trini-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(94, 114, 228, 0.08) 0%, rgba(45, 206, 137, 0.06) 100%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* --- Bot Avatar --- */
+.trini-avatar {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 4px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    object-fit: cover;
+}
+
+.trini-avatar:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* --- Stat Cards --- */
+.trini-stat-card {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    border: none;
+}
+
+.trini-stat-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+.trini-stat-icon {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.75rem;
+    font-size: 1.3rem;
+}
+
+.trini-stat-value {
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.trini-stat-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 600;
+    opacity: 0.7;
+}
+
+/* --- Bot Name & Owner Badge --- */
+.trini-bot-name {
+    font-size: 2.2rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+}
+
+.trini-owner-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 14px;
+    border-radius: 2rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+}
+
+/* --- Buttons --- */
+.trini-invite-btn {
+    padding: 12px 36px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 0.75rem;
+    letter-spacing: 0.02em;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.trini-invite-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* --- Description Text --- */
+.trini-description {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    opacity: 0.85;
+    max-width: 500px;
+}
+
+/* --- Animations --- */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.trini-animate {
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+.trini-animate-delay-1 {
+    animation-delay: 0.1s;
+    opacity: 0;
+}
+
+.trini-animate-delay-2 {
+    animation-delay: 0.2s;
+    opacity: 0;
+}
+
+.trini-animate-delay-3 {
+    animation-delay: 0.3s;
+    opacity: 0;
+}
+
+/* --- Login Page --- */
+.trini-login-card {
+    border-radius: 1.25rem;
+    overflow: hidden;
+    max-width: 440px;
+}
+
+.trini-login-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
+    object-fit: cover;
+}
+
+.trini-login-btn {
+    padding: 14px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 0.75rem;
+    letter-spacing: 0.02em;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.trini-login-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.trini-login-divider {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.trini-login-divider::before,
+.trini-login-divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+/* --- Navbar Enhancements --- */
+.navbar .dropdown-menu {
+    border-radius: 0.75rem;
+    border: none;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+
+/* --- Footer Enhancements --- */
+.footer .nav-link {
+    transition: color 0.2s ease;
+}
+
+.footer .nav-link:hover {
+    opacity: 0.8;
+}
+
+/* --- Sidebar Enhancements --- */
+.sidenav .nav-link {
+    border-radius: 0.5rem;
+    margin: 2px 8px;
+    transition: all 0.2s ease;
+}
+
+/* --- Form Controls --- */
+.form-control:focus {
+    border-color: rgba(94, 114, 228, 0.5);
+    box-shadow: 0 0 0 2px rgba(94, 114, 228, 0.15);
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+    .trini-avatar {
+        width: 120px;
+        height: 120px;
+    }
+
+    .trini-bot-name {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    .trini-owner-badge {
+        font-size: 0.7rem;
+    }
+
+    .trini-description {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .trini-stat-value {
+        font-size: 1.4rem;
+    }
+}

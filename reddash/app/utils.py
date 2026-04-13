@@ -619,7 +619,7 @@ def initialize_babel(app: Flask) -> None:
     # @app.babel.localeselector
     def get_locale() -> str:
         return (
-            session.get("lang_code") or request.accept_languages.best_match(app.config["LANGUAGES"], default="en-US")
+            session.get("lang_code") or request.accept_languages.best_match(app.config["LANGUAGES"], default="es-ES")
         ).replace("-", "_")
 
     app.extensions["babel"].locale_selector = get_locale
