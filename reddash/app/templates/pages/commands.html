@@ -15,12 +15,14 @@
             <div class="row">
               <div class="col-sm-12 text-left">
                   <div class="d-flex justify-content-between mb-4">
-                      <h1 class="card-title">{{ number_to_text_with_suffix(len_cogs) }} {% if len_cogs != 1 %}{{  _("Cogs") }}{% else %}{{  _("Cog") }}{% endif %} {{ _("with") }} {{ number_to_text_with_suffix(len_commands) }} {% if len_commands != 1 %}{{ _("Commands") }}{% else %}{{ _("Command") }}{% endif %}</h1>
+                      <h1 class="trini-page-header">{{ number_to_text_with_suffix(len_cogs) }} {% if len_cogs != 1 %}{{  _("Cogs") }}{% else %}{{  _("Cog") }}{% endif %} {{ _("with") }} {{ number_to_text_with_suffix(len_commands) }} {% if len_commands != 1 %}{{ _("Commands") }}{% else %}{{ _("Command") }}{% endif %}</h1>
                   </div>
                   <br />
-                  <form action="#" onsubmit="submitSearch(event);" class="input-group">
+                  <form action="#" onsubmit="submitSearch(event);" class="trini-search">
+                  <div class="input-group">
                     <span class="input-group-text text-body"><i class="fa fa-search" aria-hidden="true"></i></span>
                     <input id="command-search" type="search" class="form-control" placeholder="{{ _("Search a command...") }}" value="{% if query %}{{ query }}{% endif %}" />
+                  </div>
                   </form>
               </div>
             </div>
@@ -28,7 +30,7 @@
             {% if cogs %}
               {% if not query %}
                 <div class="row">
-                    <div id="commands-tabs" class="nav-wrapper position-relative col-md-2">
+                    <div id="commands-tabs" class="nav-wrapper position-relative col-md-2 trini-command-tabs">
                       <ul class="nav nav-pills nav-fill flex-column p-1" role="tablist" aria-orientation="vertical">
                         {% for cog in cogs %}
                           <li class="nav-item">
@@ -72,7 +74,7 @@
                                                     </div>
                                                 </div>
                                               </div>
-                                                <table class="table tablesorter">
+                                                <table class="table tablesorter trini-table">
                                                     <thead class="text-primary">
                                                         <tr>
                                                             <th>{{ _("Command") }}</th>
@@ -142,7 +144,7 @@
                                     </ul>
                                 </div>
                               </div>
-                              <table class="table tablesorter">
+                              <table class="table tablesorter trini-table">
                                   <thead class="text-primary">
                                       <tr>
                                           <th>{{ _("Command") }}</th>

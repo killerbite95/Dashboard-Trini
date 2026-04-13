@@ -1,22 +1,32 @@
-<footer class="footer pt-3">
+<footer class="footer pt-4">
   <div class="container-fluid">
-    <div class="row align-items-center justify-content-lg-between">
-      <div class="col-lg-6 mb-lg-0 mb-4">
-        <div class="copyright text-sm text-muted">
-          &copy; {{ variables["bot"]["name"] }} &mdash; {{ _("Control Panel") }}
+    <div class="row align-items-center">
+      <div class="col-lg-4 mb-lg-0 mb-3">
+        <div class="trini-footer-brand">
+          <img src="{{ variables["bot"]["avatar"] }}" class="trini-footer-avatar" alt="{{ variables["bot"]["name"] }}">
+          <span class="text-sm text-muted font-weight-bold">{{ variables["bot"]["name"] }}</span>
         </div>
+        <p class="text-xs text-muted mb-0 mt-1">&copy; {{ _("Control Panel") }} &mdash; {{ _("All rights reserved.") }}</p>
       </div>
-      <div class="col-lg-6">
-        <ul class="nav nav-footer justify-content-center justify-content-lg-end">
+      <div class="col-lg-4 mb-lg-0 mb-3">
+        <ul class="nav justify-content-center">
           {% if variables["meta"]["support_server"] %}
             <li class="nav-item">
-              <a href="{{ variables["meta"]["support_server"] }}" class="nav-link text-muted" target="_blank">{{ _("Support") }}</a>
+              <a href="{{ variables["meta"]["support_server"] }}" class="nav-link text-muted text-sm" target="_blank"><i class="fab fa-discord me-1"></i>{{ _("Support") }}</a>
             </li>
           {% endif %}
           <li class="nav-item">
-            <a href="{{ url_for("base_blueprint.credits") }}" class="nav-link text-muted">{{ _("Credits") }}</a>
+            <a href="{{ url_for("base_blueprint.commands") }}" class="nav-link text-muted text-sm"><i class="fa fa-book me-1"></i>{{ _("Commands") }}</a>
+          </li>
+          <li class="nav-item">
+            <a href="{{ url_for("base_blueprint.credits") }}" class="nav-link text-muted text-sm"><i class="fa fa-heart me-1"></i>{{ _("Credits") }}</a>
           </li>
         </ul>
+      </div>
+      <div class="col-lg-4">
+        <div class="text-lg-end text-center">
+          <a href="{{ variables["bot"]["invite_url"] }}" class="btn btn-sm bg-gradient-{{ variables["meta"]["color"] }} mb-0" target="_blank"><i class="ni ni-fat-add me-1"></i>{{ _("Invite Me!") }}</a>
+        </div>
       </div>
     </div>
   </div>

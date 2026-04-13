@@ -508,7 +508,7 @@ msgid "You have been deconnected with success."
 msgstr "Has cerrado sesión correctamente."
 
 #: reddash/app/templates/errors/403.html:4
-msgid "Erreur 403"
+msgid "Error 403"
 msgstr "Error 403"
 
 #: reddash/app/templates/errors/403.html:19
@@ -524,7 +524,7 @@ msgid "Back to Home"
 msgstr "Volver al Inicio"
 
 #: reddash/app/templates/errors/404.html:4
-msgid "Erreur 404"
+msgid "Error 404"
 msgstr "Error 404"
 
 #: reddash/app/templates/errors/404.html:19
@@ -536,7 +536,7 @@ msgid "Looks like that page doesn't exist... Strange..."
 msgstr "Parece que esa página no existe..."
 
 #: reddash/app/templates/errors/500.html:4
-msgid "Erreur 500"
+msgid "Error 500"
 msgstr "Error 500"
 
 #: reddash/app/templates/errors/500.html:19
@@ -1198,6 +1198,10 @@ msgstr "Soporte"
 #: reddash/app/templates/includes/footer.html
 msgid "Control Panel"
 msgstr "Panel de Control"
+
+#: reddash/app/templates/includes/footer.html
+msgid "All rights reserved."
+msgstr "Todos los derechos reservados."
 
 #: reddash/app/templates/pages/third_parties/oauth.html
 msgid "Authorization"

@@ -1,7 +1,7 @@
 {% extends "layouts/base.html" %}
 
 {% block title %}
-  {{ _("Erreur 403") }}
+  {{ _("Error 403") }}
 {% endblock %}
 
 {% block stylesheets %}{% endblock %}
@@ -14,11 +14,7 @@
           <div class="card shadow-lg trini-animate">
             <div class="card-body p-5 text-center">
               <h1 class="font-weight-bold mb-2">{{ _("Error 403!") }}</h1>
-              {% if not error_message %}
-                <p class="text-muted mb-4">{{ _("Looks like you're not allowed to access to this page... Strange...") }}</p>
-              {% else %}
-                <p class="text-muted mb-4">{{ error_message }}</p>
-              {% endif %}
+              <p class="text-muted mb-4">{{ _("Looks like you're not allowed to access to this page... Strange...") }}</p>
               <img src="{{ config.ASSETS_ROOT }}/error-403.gif" height="200" class="mb-4" style="border-radius: 0.75rem;" />
               <br />
               <a class="btn bg-gradient-{{ variables["meta"]["color"] }} trini-invite-btn" href="{{ url_for("base_blueprint.index") }}">{{ _("Back to Home") }}</a>

@@ -296,3 +296,359 @@ h6,
         font-size: 1.4rem;
     }
 }
+
+/* ============================================
+   Phase 2 — Enhanced Components & Responsive
+   ============================================ */
+
+/* --- Enhanced Tables --- */
+.table.trini-table thead th {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-bottom: 2px solid #dee2e6;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    padding: 1rem 1.25rem;
+    color: #344767;
+}
+
+.table.trini-table tbody tr {
+    transition: background-color 0.15s ease;
+    cursor: pointer;
+}
+
+.table.trini-table tbody tr:hover {
+    background-color: rgba(94, 114, 228, 0.04);
+}
+
+.table.trini-table tbody td {
+    padding: 0.875rem 1.25rem;
+    vertical-align: middle;
+    border-color: #f0f2f5;
+}
+
+/* --- Guild Cards --- */
+.trini-guild-card {
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.trini-guild-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 38px rgba(0, 0, 0, 0.12);
+    border-color: rgba(94, 114, 228, 0.25);
+}
+
+.trini-guild-icon {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid rgba(94, 114, 228, 0.12);
+    transition: transform 0.3s ease;
+}
+
+.trini-guild-card:hover .trini-guild-icon {
+    transform: scale(1.08);
+}
+
+/* --- Enhanced Form Controls --- */
+.form-control {
+    border-radius: 0.5rem;
+    border: 1px solid #d2d6da;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-group-label {
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #344767;
+    margin-bottom: 0.5rem;
+}
+
+.form-check-input:checked {
+    background-color: #5e72e4;
+    border-color: #5e72e4;
+}
+
+/* --- Admin Panel: Avatar Wrapper (moved from inline) --- */
+.avatar-wrapper {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    margin: 10px auto;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.avatar-wrapper:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.avatar-wrapper:hover .profile-pic {
+    opacity: 0.5;
+}
+
+.avatar-wrapper .profile-pic {
+    height: 100%;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.avatar-wrapper .upload-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.avatar-wrapper .upload-button .fa-arrow-circle-up {
+    position: absolute;
+    font-size: 117px;
+    top: -9px;
+    left: 0;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.3s ease;
+    color: #34495e;
+}
+
+.avatar-wrapper .upload-button:hover .fa-arrow-circle-up {
+    opacity: 0.9;
+}
+
+/* --- Admin Tabs --- */
+.trini-admin-tabs .nav-link {
+    border-radius: 0.5rem;
+    padding: 0.6rem 1.2rem;
+    font-weight: 500;
+    font-size: 0.85rem;
+    transition: all 0.2s ease;
+    color: #67748e;
+    white-space: nowrap;
+}
+
+.trini-admin-tabs .nav-link.active {
+    font-weight: 600;
+}
+
+/* --- Command Tabs (Vertical) --- */
+.trini-command-tabs .nav-link {
+    text-align: left;
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2px;
+    transition: all 0.2s ease;
+    color: #67748e;
+}
+
+.trini-command-tabs .nav-link.active {
+    font-weight: 600;
+}
+
+.trini-command-tabs .nav-link:hover:not(.active) {
+    background: rgba(94, 114, 228, 0.06);
+}
+
+/* --- Search Input Enhancement --- */
+.trini-search .input-group {
+    border-radius: 0.75rem;
+    overflow: hidden;
+    border: 1px solid #d2d6da;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.trini-search .input-group:focus-within {
+    border-color: rgba(94, 114, 228, 0.5);
+    box-shadow: 0 0 0 3px rgba(94, 114, 228, 0.12);
+}
+
+.trini-search .input-group-text {
+    border: none;
+    background: transparent;
+}
+
+.trini-search .form-control {
+    border: none;
+    box-shadow: none !important;
+}
+
+/* --- Dropdown Enhancements --- */
+.dropdown-menu {
+    border: none;
+    border-radius: 0.75rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+    padding: 0.5rem;
+}
+
+.dropdown-item {
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    transition: background-color 0.15s ease;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    background-color: rgba(94, 114, 228, 0.06);
+}
+
+/* --- Modal Enhancements --- */
+.modal-content {
+    border-radius: 1rem;
+    border: none;
+    overflow: hidden;
+}
+
+.modal-header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.modal-footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+/* --- Sidebar Active State Enhancement --- */
+.sidenav .nav-link.active {
+    background: linear-gradient(135deg, rgba(94, 114, 228, 0.1) 0%, rgba(94, 114, 228, 0.04) 100%);
+    font-weight: 600;
+}
+
+.sidenav .nav-link:hover:not(.active) {
+    background: rgba(0, 0, 0, 0.03);
+}
+
+/* --- Footer Multi-column --- */
+.trini-footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.trini-footer-avatar {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* --- Credits Page --- */
+.trini-credits-card {
+    border-left: 4px solid #5e72e4;
+    transition: transform 0.2s ease;
+}
+
+.trini-credits-card:hover {
+    transform: translateX(4px);
+}
+
+/* --- Page Header --- */
+.trini-page-header {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #344767;
+    margin-bottom: 0.5rem;
+}
+
+.trini-page-subtitle {
+    font-size: 0.9rem;
+    color: #67748e;
+    font-weight: 400;
+}
+
+/* --- Additional Responsive --- */
+@media (max-width: 1199px) {
+    .trini-admin-tabs .nav-pills {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+
+    .trini-admin-tabs .nav-pills::-webkit-scrollbar {
+        display: none;
+    }
+
+    .trini-admin-tabs .nav-item {
+        flex-shrink: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-fluid {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .trini-guild-icon {
+        width: 56px;
+        height: 56px;
+    }
+
+    h1.card-title {
+        font-size: 1.3rem;
+    }
+
+    .nav-pills .nav-link {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .trini-command-tabs {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+        margin-bottom: 1rem;
+    }
+
+    .trini-command-tabs .nav-pills {
+        flex-direction: row !important;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+
+    .trini-command-tabs .nav-pills::-webkit-scrollbar {
+        display: none;
+    }
+
+    .trini-command-tabs .nav-item {
+        flex-shrink: 0;
+    }
+
+    .trini-footer-brand {
+        justify-content: center;
+        margin-bottom: 0.5rem;
+    }
+
+    .footer .text-lg-end {
+        text-align: center !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .trini-guild-card .card-body {
+        padding: 1rem;
+    }
+
+    .table.trini-table thead th,
+    .table.trini-table tbody td {
+        padding: 0.625rem 0.75rem;
+        font-size: 0.8rem;
+    }
+
+    .trini-guild-icon {
+        width: 48px;
+        height: 48px;
+    }
+}
