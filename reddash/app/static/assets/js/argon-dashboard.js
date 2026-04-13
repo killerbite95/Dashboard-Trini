@@ -1,5 +1,5 @@
 "use strict";
-(function() {
+(function () {
   let isWindows = !!(navigator.platform.indexOf("Win") > -1);
   if (isWindows) {
     // If we are on windows OS we activate the perfectScrollbar function.
@@ -36,7 +36,7 @@ if (document.getElementById("navbarBlur")) {
 
 // Initialization of Tooltips.
 let tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-let tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
+let tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
   return new bootstrap.Tooltip(tooltipTriggerEl)
 })
 
@@ -57,7 +57,7 @@ function defocused(el) {
 
 // Helper for adding on all elements multiple attributes.
 function setAttributes(el, options) {
-  Object.keys(options).forEach(function(attr) {
+  Object.keys(options).forEach(function (attr) {
     el.setAttribute(attr, options[attr]);
   })
 }
@@ -82,7 +82,7 @@ if (document.querySelector(".fixed-plugin")) {
   let buttonNavbarFixed = document.getElementById("navbarFixed");
 
   if (fixedPluginButton) {
-    fixedPluginButton.onclick = function() {
+    fixedPluginButton.onclick = function () {
       if (!fixedPlugin.classList.contains("show")) {
         fixedPlugin.classList.add("show");
       } else {
@@ -92,7 +92,7 @@ if (document.querySelector(".fixed-plugin")) {
   }
 
   if (fixedPluginButtonNav) {
-    fixedPluginButtonNav.onclick = function() {
+    fixedPluginButtonNav.onclick = function () {
       if (!fixedPlugin.classList.contains("show")) {
         fixedPlugin.classList.add("show");
       } else {
@@ -101,20 +101,20 @@ if (document.querySelector(".fixed-plugin")) {
     }
   }
 
-  fixedPluginCloseButton.forEach(function(el) {
-    el.onclick = function() {
+  fixedPluginCloseButton.forEach(function (el) {
+    el.onclick = function () {
       fixedPlugin.classList.remove("show");
     }
   })
 
-  document.querySelector("body").onclick = function(e) {
+  document.querySelector("body").onclick = function (e) {
     if (e.target != fixedPluginButton && e.target != fixedPluginButtonNav && e.target.closest(".fixed-plugin .card") != fixedPluginCard) {
       fixedPlugin.classList.remove("show");
     }
   }
 
   if (navbar && (navbar.getAttribute("data-scroll") == 'true' && buttonNavbarFixed)) {
-        buttonNavbarFixed.setAttribute("checked", "true");
+    buttonNavbarFixed.setAttribute("checked", "true");
   }
 
 }
@@ -153,10 +153,8 @@ function backgroundTheme(a) {
   let theme = a.checked ? "dark" : "white";
   document.querySelector("#background_theme").href = "/static/assets/css/themes/background_theme_" + theme + ".css";
   if (theme === "dark") {
-    document.body.classList.add("dark-version");
     document.querySelector("#sidenav-theme-select").children[1].click();
   } else {
-    document.body.classList.remove("dark-version");
     document.querySelector("#sidenav-theme-select").children[0].click();
   }
 }
@@ -242,7 +240,7 @@ function navbarBlurOnScroll(id) {
   let toggleClasses = ["shadow-none"];
 
   if (navbarScrollActive == "true") {
-    window.onscroll = debounce(function() {
+    window.onscroll = debounce(function () {
       if (window.scrollY > scrollDistance) {
         blurNavbar();
       } else {
@@ -250,7 +248,7 @@ function navbarBlurOnScroll(id) {
       }
     }, 10);
   } else {
-    window.onscroll = debounce(function() {
+    window.onscroll = debounce(function () {
       transparentNavbar();
     }, 10);
   }
@@ -260,7 +258,7 @@ function navbarBlurOnScroll(id) {
   if (isWindows) {
     let content = document.querySelector(".main-content");
     if (navbarScrollActive == "true") {
-      content.addEventListener("ps-scroll-y", debounce(function() {
+      content.addEventListener("ps-scroll-y", debounce(function () {
         if (content.scrollTop > scrollDistance) {
           blurNavbar();
         } else {
@@ -268,7 +266,7 @@ function navbarBlurOnScroll(id) {
         }
       }, 10));
     } else {
-      content.addEventListener("ps-scroll-y", debounce(function() {
+      content.addEventListener("ps-scroll-y", debounce(function () {
         transparentNavbar();
       }, 10));
     }
@@ -297,10 +295,10 @@ function navbarBlurOnScroll(id) {
 // leading edge, instead of the trailing.
 function debounce(func, wait, immediate) {
   let timeout;
-  return function() {
+  return function () {
     let context = this,
       args = arguments;
-    let later = function() {
+    let later = function () {
       timeout = null;
       if (!immediate) func.apply(context, args);
     };
@@ -329,7 +327,7 @@ if (iconSidenav) {
 function toggleSidenav() {
   if (body.classList.contains(className)) {
     body.classList.remove(className);
-    setTimeout(function() {
+    setTimeout(function () {
       sidenav.classList.remove("bg-white");
     }, 100);
     sidenav.classList.remove("bg-transparent");
@@ -344,7 +342,7 @@ function toggleSidenav() {
 
 let html = document.getElementsByTagName("html")[0];
 
-html.addEventListener("click", function(e) {
+html.addEventListener("click", function (e) {
   if (body.classList.contains("g-sidenav-pinned") && !e.target.classList.contains("sidenav-toggler-line")) {
     body.classList.remove(className);
   }
@@ -378,11 +376,11 @@ window.addEventListener("load", sidenavTypeOnResize);
 function sidenavTypeOnResize() {
   let elements = document.querySelectorAll('[onclick="sidebarType(this)"]');
   if (window.innerWidth < 1200) {
-    elements.forEach(function(el) {
+    elements.forEach(function (el) {
       el.classList.add("disabled");
     });
   } else {
-    elements.forEach(function(el) {
+    elements.forEach(function (el) {
       el.classList.remove("disabled");
     });
   }
@@ -393,7 +391,7 @@ function sidenavTypeOnResize() {
 
 let total = document.querySelectorAll(".nav-pills");
 
-total.forEach(function(item, i) {
+total.forEach(function (item, i) {
   let moving_div = document.createElement("div");
   let first_li = item.querySelector("li:first-child .nav-link");
   let tab = first_li.cloneNode();
@@ -414,7 +412,7 @@ total.forEach(function(item, i) {
   }
   moving_div.style.transition = ".5s ease";
 
-  item.onmouseover = function(event) {
+  item.onmouseover = function (event) {
     let target = getEventTarget(event) || event;
     let li = target.closest("li"); // get reference
     if (li) {
@@ -422,7 +420,7 @@ total.forEach(function(item, i) {
       let index = nodes.indexOf(li) + 1;
       let nav_link = item.querySelector("li:nth-child(" + index + ") .nav-link")
       if (nav_link) {
-        nav_link.onclick = function() {
+        nav_link.onclick = function () {
           moving_div = item.querySelector(".moving-tab");
           let sum = 0;
           if (item.classList.contains("flex-column")) {
@@ -447,8 +445,8 @@ total.forEach(function(item, i) {
 
 // Tabs navigation resize.
 
-window.addEventListener("resize", function(event) {
-  total.forEach(function(item, i) {
+window.addEventListener("resize", function (event) {
+  total.forEach(function (item, i) {
     item.querySelector(".moving-tab").remove();
     let moving_div = document.createElement("div");
     let tab = item.querySelector(".nav-link.active").cloneNode();
@@ -488,13 +486,13 @@ window.addEventListener("resize", function(event) {
   });
 
   if (window.innerWidth < 991) {
-    total.forEach(function(item, i) {
+    total.forEach(function (item, i) {
       if (!item.classList.contains("flex-column")) {
         item.classList.add("flex-column", "on-resize");
       }
     });
   } else {
-    total.forEach(function(item, i) {
+    total.forEach(function (item, i) {
       if (item.classList.contains("on-resize")) {
         item.classList.remove("flex-column", "on-resize");
       }
