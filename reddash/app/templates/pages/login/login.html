@@ -1,48 +1,44 @@
 {% extends "layouts/base.html" %}
 
 {% block title %}
-{{ _("Login") }}
+  {{ _("Login") }}
 {% endblock %}
 
 {% block stylesheets %}{% endblock %}
 
 {% block content %}
-<main class="main-content position-relative border-radius-lg">
-  <div class="container-fluid py-4">
-    <div class="row justify-content-center">
-      <div class="col-lg-5 col-md-7 col-sm-9">
-        <div class="card trini-login-card shadow-lg trini-animate">
-          <div class="card-body p-4 p-lg-5 text-center">
-            <!-- Bot Avatar -->
-            <img src="{{ variables[" bot"]["avatar"] }}" alt="{{ variables[" bot"]["name"] }}"
-              class="trini-login-avatar mb-3" />
-            <h2 class="font-weight-bold mb-1">{{ variables["bot"]["name"] }}</h2>
-            <p class="text-sm text-muted mb-0">{{ _("Authentication") }}</p>
+  <main class="main-content position-relative border-radius-lg">
+    <div class="container-fluid py-4">
+      <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-7 col-sm-9">
+          <div class="card trini-login-card shadow-lg trini-animate">
+            <div class="card-body p-4 p-lg-5 text-center">
+              <!-- Bot Avatar -->
+              <img src="{{ variables["bot"]["avatar"] }}" alt="{{ variables["bot"]["name"] }}" class="trini-login-avatar mb-3" />
+              <h2 class="font-weight-bold mb-1">{{ variables["bot"]["name"] }}</h2>
+              <p class="text-sm text-muted mb-0">{{ _("Authentication") }}</p>
 
-            <!-- Divider -->
-            <div class="trini-login-divider">
-              <span class="text-xs text-muted text-uppercase font-weight-bold">{{ _("Login") }}</span>
+              <!-- Divider -->
+              <div class="trini-login-divider">
+                <span class="text-xs text-muted text-uppercase font-weight-bold">{{ _("Login") }}</span>
+              </div>
+
+              <!-- Info Text -->
+              <p class="text-sm mb-4" style="line-height: 1.6;">
+                {{ _("Accessing Red-Web-Dashboard controls requires authorization for security. Authorization for Red-Web-Dashboard uses Discord Open Authentication to identify and verify users. Please click on the Login button below to access the Dashboard.") }}
+              </p>
+
+              <!-- Login Button -->
+              <a class="btn bg-gradient-{{ variables["meta"]["color"] }} trini-login-btn w-100 mb-0" href="{{ url_for("login_blueprint.discord_oauth", next=next) }}">
+                <i class="fa fa-sign-in"></i>
+                {{ _("Login with Discord") }}
+              </a>
             </div>
-
-            <!-- Info Text -->
-            <p class="text-sm mb-4" style="line-height: 1.6;">
-              {{ _("Accessing Red-Web-Dashboard controls requires authorization for security. Authorization for
-              Red-Web-Dashboard uses Discord Open Authentication to identify and verify users. Please click on the Login
-              button below to access the Dashboard.") }}
-            </p>
-
-            <!-- Login Button -->
-            <a class="btn bg-gradient-{{ variables[" meta"]["color"] }} trini-login-btn w-100 mb-0" href="{{ url_for("
-              login_blueprint.discord_oauth", next=next) }}">
-              <i class="fa fa-sign-in"></i>
-              {{ _("Login with Discord") }}
-            </a>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</main>
+  </main>
 {% endblock %}
 
 {% block javascripts %}{% endblock %}

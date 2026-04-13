@@ -9,13 +9,12 @@
       <div class="col-lg-6">
         <ul class="nav nav-footer justify-content-center justify-content-lg-end">
           {% if variables["meta"]["support_server"] %}
-          <li class="nav-item">
-            <a href="{{ variables[" meta"]["support_server"] }}" class="nav-link text-muted" target="_blank">{{
-              _("Support") }}</a>
-          </li>
+            <li class="nav-item">
+              <a href="{{ variables["meta"]["support_server"] }}" class="nav-link text-muted" target="_blank">{{ _("Support") }}</a>
+            </li>
           {% endif %}
           <li class="nav-item">
-            <a href="{{ url_for(" base_blueprint.credits") }}" class="nav-link text-muted">{{ _("Credits") }}</a>
+            <a href="{{ url_for("base_blueprint.credits") }}" class="nav-link text-muted">{{ _("Credits") }}</a>
           </li>
         </ul>
       </div>
