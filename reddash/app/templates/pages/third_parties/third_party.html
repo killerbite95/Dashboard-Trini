@@ -12,7 +12,7 @@
 
 {% block content %}
   <main class="main-content position-relative border-radius-lg">
-    <div class="container-fluid">
+    <div class="container-fluid py-4">
         <div class="row">
             {% if guild and not expanded and not fullscreen %}
                 {% include "pages/guild_profile.html" %}
@@ -20,7 +20,7 @@
 
             <div id="guild-content"{% if guild and not expanded and not fullscreen %} class="col-md-8 mt-4"{% endif %}>
                 {% if guild and not fullscreen %}
-                    <ul class="nav nav-pills position-relative end-0" role="tablist">
+                    <ul class="nav nav-pills position-relative end-0 trini-admin-tabs" role="tablist">
                         <li class="nav-item">
                             <a href="{{ url_for("base_blueprint.dashboard_guild", guild_id=guild.id) }}" class="nav-link">
                                 <i class="fa fa-map opacity-10" style="vertical-align: -1px;"></i> {{ _("Overview") }}
@@ -45,20 +45,20 @@
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-sm-12 text-left">
-                                        <div class="d-flex justify-content-between mb-4">
+                                        <div class="d-flex justify-content-between align-items-center mb-4">
                                             {% if guild %}
                                                 {% if not expanded and not fullscreen %}
-                                                    <h2 class="card-title"><a href="{{ url_for("base_blueprint.dashboard_guild", guild_id=guild.id, page="third-parties", third_party=name) }}">🔙 {{ name }}</a>{% if page %} / {{ page|replace("_", " ")|replace("-", " ")|title }}{% endif %}</h2>
+                                                    <h2 class="trini-page-header mb-0"><a href="{{ url_for("base_blueprint.dashboard_guild", guild_id=guild.id, page="third-parties", third_party=name) }}" class="trini-tp-back-link"><i class="fa fa-arrow-left"></i> {{ name }}</a>{% if page %} <span class="trini-tp-breadcrumb-sep">/</span> {{ page|replace("_", " ")|replace("-", " ")|title }}{% endif %}</h2>
                                                 {% else %}
-                                                    <h2 class="card-title"><a href="{{ url_for("base_blueprint.dashboard_guild", guild_id=guild.id) }}"><img src="{{ guild.icon_url }}" style="height: 50px; vertical-align: -13px; border-radius: 50%; margin: none; display: inline;" /> {{ guild.name }}</a> / <a href="{{ url_for("base_blueprint.dashboard_guild", guild_id=guild.id, page="third-parties", third_party=name) }}">🔙 {{ name }}</a>{% if page %} / {{ page|replace("_", " ")|replace("-", " ")|title }}{% endif %}</h2>
+                                                    <h2 class="trini-page-header mb-0"><a href="{{ url_for("base_blueprint.dashboard_guild", guild_id=guild.id) }}"><img src="{{ guild.icon_url }}" class="trini-tp-guild-icon" /> {{ guild.name }}</a> <span class="trini-tp-breadcrumb-sep">/</span> <a href="{{ url_for("base_blueprint.dashboard_guild", guild_id=guild.id, page="third-parties", third_party=name) }}" class="trini-tp-back-link"><i class="fa fa-arrow-left"></i> {{ name }}</a>{% if page %} <span class="trini-tp-breadcrumb-sep">/</span> {{ page|replace("_", " ")|replace("-", " ")|title }}{% endif %}</h2>
                                                 {% endif %}
                                             {% else %}
-                                                <h2 class="card-title"><a href="{{ url_for("third_parties_blueprint.third_parties", third_party=name) }}">🔙 {{ name }}</a>{% if page %} / {{ page|replace("_", " ")|replace("-", " ")|title }}{% endif %}</h2>
+                                                <h2 class="trini-page-header mb-0"><a href="{{ url_for("third_parties_blueprint.third_parties", third_party=name) }}" class="trini-tp-back-link"><i class="fa fa-arrow-left"></i> {{ name }}</a>{% if page %} <span class="trini-tp-breadcrumb-sep">/</span> {{ page|replace("_", " ")|replace("-", " ")|title }}{% endif %}</h2>
                                             {% endif %}
                                         </div>
                                     </div>
                                 </div>
-                                <div id="third-party-content" class="container mt-4">
+                                <div id="third-party-content" class="trini-tp-content mt-4">
                                     {{ source_content|safe }}
                                 </div>
                             </div>

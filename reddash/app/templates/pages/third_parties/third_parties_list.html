@@ -3,14 +3,14 @@
     <div class="row">
       <div class="col-sm-12 text-left">
           <div class="d-flex justify-content-between mb-2">
-              <h1 class="card-title">{{ number_to_text_with_suffix(third_parties|length) }} {% if third_parties|length != 1 %}{{  _("Third Parties") }}{% else %}{{  _("Third Party") }}{% endif %}</h1>
+              <h1 class="trini-page-header">{{ number_to_text_with_suffix(third_parties|length) }} {% if third_parties|length != 1 %}{{ _("Third Parties") }}{% else %}{{ _("Third Party") }}{% endif %}</h1>
           </div>
       </div>
     </div>
     <br />
     {% if third_parties %}
       <div class="row">
-          <div id="third-parties-tabs" class="nav-wrapper position-relative col-md-2">
+          <div id="third-parties-tabs" class="nav-wrapper position-relative col-md-2 trini-command-tabs">
             <ul class="nav nav-pills nav-fill flex-column p-1" role="tablist" aria-orientation="vertical">
               {% for third_party in third_parties %}
                 <li class="nav-item">
@@ -40,7 +40,7 @@
                                               <p><b>{{ _("Repo:") }}</b> <a {% if third_parties_infos[third_party]["repo"] != "Unknown" %}href="{{ third_parties_infos[third_party]["repo"] }}"{% endif %}>{{ third_parties_infos[third_party]["repo"] }}</a></p>
                                           </div>
                                       </div>
-                                      <table class="table tablesorter">
+                                      <table class="table tablesorter trini-table">
                                           <thead class="text-primary">
                                               <tr>
                                                   <th>{{ _("Page") }}</th>
@@ -50,13 +50,13 @@
                                           <tbody>
                                             {% for page in third_parties[third_party] %}
                                               <tr>
-                                                <p>
-                                                  <td style="padding-left: {{ loop.depth0 * 40 + 24 }}px">
-                                                    <a class="text-{{ variables["meta"]["color"] }}" href="{{ third_parties[third_party][page].url }}">{{ page|replace("_", " ")|replace("-", " ")|title }}</a>
-                                                  </td>
-                                                </p>
+                                                <td style="padding-left: {{ loop.depth0 * 40 + 24 }}px">
+                                                  <a class="text-{{ variables["meta"]["color"] }}" href="{{ third_parties[third_party][page].url }}">{{ page|replace("_", " ")|replace("-", " ")|title }}</a>
+                                                </td>
                                                 {% if third_parties[third_party][page].description %}
-                                                  <td style="padding-left: 24px">{{ third_parties[third_party][page].description|markdown }}</td>
+                                                  <td style="padding-left: 24px" class="text-wrap">{{ third_parties[third_party][page].description|markdown }}</td>
+                                                {% else %}
+                                                  <td></td>
                                                 {% endif %}
                                               </tr>
                                             {% endfor %}
