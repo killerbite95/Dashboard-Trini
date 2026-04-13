@@ -271,6 +271,28 @@ h6,
     box-shadow: 0 0 0 2px rgba(94, 114, 228, 0.15);
 }
 
+/* --- Button Hover Fix (prevent gradient fade) --- */
+.btn[class*="bg-gradient-"] {
+    transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+}
+
+.btn[class*="bg-gradient-"]:hover {
+    opacity: 1 !important;
+    transform: translateY(-1px);
+    box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+.btn[class*="bg-gradient-"]:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+.btn-outline-secondary:hover:not(.active) {
+    opacity: 1 !important;
+    background-color: rgba(131, 146, 171, 0.1) !important;
+    color: #8392ab !important;
+}
+
 /* --- Responsive Adjustments --- */
 @media (max-width: 768px) {
     .trini-avatar {
