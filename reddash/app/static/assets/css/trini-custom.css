@@ -250,6 +250,18 @@ h6,
 }
 
 /* --- Footer Enhancements --- */
+@media (min-width: 1200px) {
+    .g-sidenav-show .footer {
+        margin-left: 17.125rem;
+        transition: all 0.2s ease-in-out;
+    }
+    .g-sidenav-hidden .footer {
+        margin-left: 7.5rem;
+    }
+    .g-sidenav-hidden .navbar-vertical:hover ~ .footer {
+        margin-left: 17.125rem;
+    }
+}
 .footer .nav-link {
     transition: color 0.2s ease;
 }
