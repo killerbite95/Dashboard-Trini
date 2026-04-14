@@ -255,13 +255,16 @@ h6,
         margin-left: 17.125rem;
         transition: all 0.2s ease-in-out;
     }
+
     .g-sidenav-hidden .footer {
         margin-left: 7.5rem;
     }
-    .g-sidenav-hidden .navbar-vertical:hover ~ .footer {
+
+    .g-sidenav-hidden .navbar-vertical:hover~.footer {
         margin-left: 17.125rem;
     }
 }
+
 .footer .nav-link {
     transition: color 0.2s ease;
 }
